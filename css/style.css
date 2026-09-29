@@ -5,7 +5,7 @@
 
 html {
     font-size: 1em;
-    font-family: "Pattaya", sans-serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 header {
@@ -25,16 +25,15 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
 #articles {
     background-color: rgb(163, 154, 95);
     padding: 20px;
 }
 p {
     text-align: justify;
-    font-size: 1.2rem;
-    line-height: 2.4rem;
-    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -78,3 +77,9 @@ nav ul {
     padding: 20px;
     text-align: center;
 }
+
+
+ul {
+    list-style: none;
+}
+
