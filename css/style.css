@@ -35,6 +35,10 @@ p {
     line-height: 2.5rem;
     margin-bottom: 1rem;
 }
+p::first-line {
+    letter-spacing: 5px;
+    font-weight: bold;
+}
 
 h2 {
     text-align: center;
@@ -53,7 +57,7 @@ nav ul {
     justify-content: center;
 
 }
-
+ 
 #content {
     background-color: rgb(253, 249, 180);
     padding: 20px;
@@ -78,8 +82,105 @@ nav ul {
     text-align: center;
 }
 
-
 ul {
     list-style: none;
 }
 
+nav a:visited {
+    color: red;
+}
+nav a:hover {
+    color: rgb(36, 226, 19);
+    text-decoration: underline;
+}
+nav a:focus {
+    color: rgb(141, 41, 46);
+    transform: scale(3);
+}
+
+nav a:active {
+    color: orchid;
+}
+
+nav a {
+    color: rgb(2, 225, 255);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#articles li:nth-child(even) {
+    background-color: rgb(101, 112, 51);
+}
+
+h2::after {
+    content: "";
+    font-size: 12px;
+    margin-left: 15px;
+    color: blueviolet;
+}
+/*.bi-volume-mute {
+    color: olivedrab;
+     font-size: 32px;
+    /*font-family:"bootstrap-icons";
+}*/
+
+
+
+/*Начало верстки форм*/ 
+.form-reg {
+    width: 190px;
+    margin: 20px auto;
+    background-color: cadetblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input {
+    background-color: rgb(192, 230, 231);
+    border: darkcyan 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(7, 37, 26);
+}
+input[type=submit] {
+    background-color: rgb(43, 104, 89);
+    color: black;
+    padding: 15px;
+}
+
+ input[type=checkbox],
+ input[type=radio] {
+    accent-color: red;
+ }
+
+ select {
+    background-color: rgb(66, 121, 109);
+    color: #000;
+    border-radius: 15px;
+    padding: 15px;
+
+ }
+
+ textarea {
+    background-color: rgb(240, 8, 28);
+    
+
+}
+
+#articles a:hover {
+    color: rgb(74, 60, 207);
+    text-decoration: underline;
+ }
+ #articles a:focus {
+    color: rgb(44, 226, 20);
+    transform: scale(3);
+
+ }
+#articles a::after{
+    font-family: 'Courier New', Courier, monospace;
+    content: "Важно!";
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(189, 39, 189);
+}

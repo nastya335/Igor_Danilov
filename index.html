@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
 </head>
 
@@ -23,7 +24,12 @@
                 <li>
                     <a href="#about">О Игоре Анатальевиче</a>
                 </li>
-                <li><a href="#articles">Статьи Игоря</a></li>
+                <li>
+                    <a href="#articles">Статьи Игоря</a>
+                </li>
+                <li>
+                    <a href="#registration">Регистрация</a>
+                </li>
             </ul>
         </nav>
 
@@ -60,8 +66,34 @@
                 <li>
                     <a href="article4.html">Личная Жизнь.</a>
                 </li>
+            
             </ol>
         </section>
+        <section id="registration">
+            <h2>Регистрация</h2>
+            <form class="form-reg" action="">
+                <label for="login">Введите логин</label>
+                <input type="text" id="login" name="login" placeholder="Логин" required autofocus><br>
+                <label for="pass">Введите пароль</label>
+                <input type="password" id="pass" name="password" placeholder="Пароль" required><br>
+                <label for="city">Выберете город</label><br>
+                <select name="city" id="city" required>
+                    <option value=""disabled selected>Выберете город</option>
+                    <option value="chel">Челябинск</option>
+                    <option value="mos">Москва</option>
+                    <option value="sam">Самара</option>
+
+                </select>
+                <label for="content">Коментарий</label>
+                <textarea name="content" id="content" placeholder="Комментарий" rows="5" cols="20">Введите комментарий</textarea>
+                <input type="checkbox" id="argeement" name="argeement">
+                <label for="argeement">Согласие на обработку</label>
+                <input type="submit" value="Зарегестрироваться"><br>
+                <input type="reset">
+            </form>
+
+        </section>
+
 
     </main>
 
@@ -73,6 +105,8 @@
                 href="https://midis.ru/specialities/razrabotka-veb-i-mobilnykh-prilozheniy/">здесь</a></p>
                 <a target="_blank" href="https://estore.drweb.ru/home/"><img width="55px" src="img/cash.svg" alt="Логотип"></a>
                 <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%BE%D0%B2,_%D0%98%D0%B3%D0%BE%D1%80%D1%8C_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87"><img width="40" src="img/building-fill-dash.svg" alt="Логотип"></a>
+                <i class="bi bi-volume-mute"></i>
+                
                 
     </footer>
 
