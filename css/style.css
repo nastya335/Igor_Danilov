@@ -177,10 +177,36 @@ input[type=submit] {
     transform: scale(3);
 
  }
-#articles a::after{
+#articles li:last-child a::after{
     font-family: 'Courier New', Courier, monospace;
     content: "Важно!";
     font-size: 20px;
     margin-left: 10px;
     color: rgb(189, 39, 189);
 }
+
+p:lang(en) {
+    font-size: 16px;
+    font-style: italic
+
+}
+footer img {
+    display: inline-block;
+  padding: 12px;
+  margin: 7px;
+  border: 2px solid #333333; 
+  border-radius: 50%;
+}
+/*таблица*/
+table {      
+    border-collapse: collapse;
+    border: 5px solid rgb(46, 30, 7);
+    margin-left: 30px;
+}
+td, th {
+    border: 2px solid black;
+}
+
+  
+
+  
