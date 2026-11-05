@@ -97,6 +97,72 @@
 
     </main>
 
+    <section id="feedback">
+    <h2>Обратная связь</h2>
+
+    <form id="contact-form" action="#" method="post">
+
+        <div class="form__item">
+            <label for="name">Имя:</label>
+            <br>
+            <input type="text" id="name" name="name"
+                 placeholder="Введите ваше имя" required>
+        </div>
+
+        <div class="form__item">
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email" name="email"
+                 placeholder="Введите ваш E-mail" required>
+        </div>
+
+        <div class="form__item">
+            <label for="topic">Тема обращения:</label>
+            <br>
+            <select id="topic" name="topic" required>
+                <option value="">Выберите тему</option>
+                <option value="question">Вопрос</option>
+                <option value="suggestion">Предложение</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
+
+        <div class="form__item">
+            <label for="message">Текст сообщения:</label>
+            <br>
+            <textarea id="message" name="message"
+                     placeholder="Введите текст сообщения"
+                     rows="5" required></textarea>
+        </div>
+
+        <div class="form__item">
+            <label for="date">Дата обращения:</label>
+            <br>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form__item">
+            <label for="phone">Телефон:</label>
+            <br>
+            <input type="tel" id="phone" name="phone"
+                 placeholder="Введите номер телефона">
+        </div>
+
+        <div class="form__item">
+            <input type="checkbox" id="agreement"
+                 name="agreement" required>
+            <label for="agreement">
+                Согласен с обработкой данных
+            </label>
+        </div>
+
+        <div class="form__item">
+            <input type="submit" value="Отправить">
+        </div>
+
+    </form>
+</section>
+
     <footer>
         <p>&copy; Хайрулина Анастасия, 2026 г.</p>
         <p><a href="tel:89995554422">8(900)-085-33-90</a></p>
